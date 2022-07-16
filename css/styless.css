@@ -12,12 +12,16 @@ html {
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
-    --accent-color:  #2196F3;
-    --primery-white-color: #FFFFFF;
+    --accent-color:  #2196f3;
+    --primery-white-color: #ffffff;
     --font-family-title: 'Roboto', sans-serif;
-    --additional-background-color: #2F303A;
-    --team-background-color: #F5F4FA;
+    --additional-background-color: #2f303a;
+    --team-background-color: #f5f4fa;
     --card-set-gap: 30px;
+    --box-shadow-color: var(--box-shadow-color);
+    --primery-background-color: #188ce8;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 img {
@@ -52,7 +56,7 @@ font-family: var(--font-family-title);
 
 /* Header */
 .header {
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid #ececec;
 }
 .section {
     padding-top: 94px;
@@ -100,7 +104,7 @@ font-family: var(--font-family-title);
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -144,7 +148,7 @@ font-family: var(--font-family-title);
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .contacts-link:hover,
@@ -159,7 +163,7 @@ font-family: var(--font-family-title);
 
     transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .contacts-link:hover .contacts-icon,
@@ -202,7 +206,7 @@ font-family: var(--font-family-title);
   
 .button-open {
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px var(--box-shadow-color);
     padding: 10px 32px;
     min-width: 200px;
     
@@ -218,11 +222,11 @@ font-family: var(--font-family-title);
 
     transition-property: background-color;
     transition-delay: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
     }
 .button-open:hover,
 .button-open:focus {
-    background-color: #188ce8;
+    background-color: var(--primery-background-color);
 }
 /* modal */
 .backdrop {
@@ -234,7 +238,7 @@ font-family: var(--font-family-title);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     
-    transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 1250ms var(--transition-timing-function);
 }
 
 .backdrop.is-hidden {
@@ -287,7 +291,7 @@ font-family: var(--font-family-title);
     padding: 0;
     cursor: pointer;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--transition-timing-function);
 }
 .button-close:hover,
 .button-close:focus {
@@ -320,7 +324,7 @@ font-family: var(--font-family-title);
     cursor: pointer;
     padding: 12px 8px 12px 42px;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms var(--transition-timing-function);
 }
 
 .form-request-input:hover,
@@ -347,7 +351,7 @@ font-family: var(--font-family-title);
     margin-top: 4px;
     cursor: pointer;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms var(--transition-timing-function);
   }
 
 .form-request-textarea::placeholder {
@@ -369,7 +373,7 @@ font-family: var(--font-family-title);
 
 .form-request-input-checkbox:checked + .form-icon {
 
-    fill: #188CE8;
+    fill: var(--primery-background-color);
     border: none;
     
 }
@@ -413,7 +417,7 @@ font-family: var(--font-family-title);
 
 
 .form-button {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px var(--box-shadow-color);
     border-radius: 4px;
     padding: 10px 55px;
     min-width: 200px;
@@ -431,12 +435,12 @@ font-family: var(--font-family-title);
 
     transition-property: background-color;
     transition-delay: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+    transition-timing-function: var(--transition-timing-function);  
 }
 
 .form-button:hover,
 .form-button:focus {
-    background-color: #188CE8;
+    background-color: var(--primery-background-color);
     outline: transparent;
 }
 
@@ -448,7 +452,7 @@ font-family: var(--font-family-title);
    
     transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .form-field-icon:hover .form-icon,
@@ -612,7 +616,7 @@ padding-top: 0;
 
     transition-property: background-color, fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .socials-link:hover,
@@ -652,7 +656,7 @@ padding-top: 0;
 
     transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .clients-link:hover .clients-icon,
@@ -697,7 +701,7 @@ margin: 60px 0;
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 .adress-link {
     color: rgba(255, 255, 255, 0.6);
@@ -707,7 +711,7 @@ margin: 60px 0;
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 .adress-map-link:hover,
 .adress-map-link:focus, 
@@ -747,7 +751,7 @@ margin: 60px 0;
 
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .footer-socials-link:hover,
@@ -772,7 +776,7 @@ margin: 60px 0;
 
 .button-subscription {
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px var(--box-shadow-color);
     min-width: 200px;
     padding: 0;
     
@@ -789,11 +793,11 @@ margin: 60px 0;
 
     transition-property: background-color;
     transition-delay: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 .button-subscription:hover,
 .button-subscription:focus {
-    background-color: #188ce8;
+    background-color: var(--primery-background-color);
 }
 
 .email {
@@ -846,7 +850,7 @@ margin: 60px 0;
 
     transition-property: backgroud-color, color, box-shadow;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 
 .projects-button:hover,
@@ -892,12 +896,12 @@ margin: 60px 0;
 
     transition-property: order-radius, border, box-shadow;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
 }
 .projects-link:hover,
 .projects-link:focus {
     border-radius: 4px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #eeeeee;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);   
@@ -905,7 +909,7 @@ margin: 60px 0;
 
 .projects-content {
 padding: 20px 24px;
-border: 1px solid #EEEEEE;
+border: 1px solid #eeeeee;
 }
 
 .projects-card {
@@ -924,13 +928,13 @@ border: 1px solid #EEEEEE;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);;
+    background-color: rgba(33, 150, 243, 0.9);
   
     transform: translateY(101%);
 
     transition-duration: transform;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
   }
   
   .overlay > p {
